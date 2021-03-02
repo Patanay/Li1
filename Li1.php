@@ -52,7 +52,7 @@ usort($files, function($x, $y) {
     return filectime($x) < filectime($y);
 });
 foreach($files as $image){
-$x1++;if($x1==15){break;}
+$x1++;if($x1==16){break;}
     $Bolly=str_replace("./Moviesflix/","",$image);
  $Movie=str_replace(".jpg","",$Bolly);
   echo "<a target=\"_top\" href=\"http://pagalbanaya.byethost3.com/Reindex.php?Movie=$Movie&L=https://moviesverse.net/?s=$Movie\"><img src=\"https://liwebsite1.herokuapp.com/Moviesflix/$Bolly\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
@@ -67,7 +67,7 @@ usort($files, function($x, $y) {
     return filectime($x) < filectime($y);
 });
 foreach($files as $image){
-$x1++;if($x1==15){break;}
+$x1++;if($x1==16){break;}
     $Bolly=str_replace("./Moviesflix1/","",$image);
  $Movie=str_replace(".jpg","",$Bolly);
   echo "<a target=\"_top\" href=\"http://pagalbanaya.byethost3.com/Reindex.php?Movie=$Movie&L=https://moviesflix.one/?s=$Movie\"><img src=\"https://liwebsite1.herokuapp.com/Moviesflix1/$Bolly\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
