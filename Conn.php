@@ -11,8 +11,18 @@ if($conn)
 id serial PRIMARY KEY,
 sampleField character varying(20) NOT NULL UNIQUE
 )"; */
-$sqlList = "INSERT INTO sampleTable (sampleField) VALUES ('HTML01'), ('JS01'), ('PHP01')";
+/* $sqlList = "INSERT INTO sampleTable (sampleField) VALUES ('HTML01'), ('JS01'), ('PHP01')";
 $conn->exec($sqlList);
 $cmdtuples = pg_affected_rows($sqlList);
-echo $cmdtuples . " tuples are affected.\n";
+echo $cmdtuples . " tuples are affected.\n";*/
+$result = pg_query($conn, "SELECT * FROM sampleTable");
+if (!$result) {
+    echo "An error occurred.\n";
+    exit;
+}
+
+$arr = pg_fetch_all($result);
+
+print_r($arr);
+
 		?>
