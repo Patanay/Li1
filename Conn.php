@@ -7,5 +7,10 @@ if($conn)
 	else{
 		echo "Connection Failed";
 		}
-		error_reporting(0);
+$sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
+id serial PRIMARY KEY,
+sampleField character varying(20) NOT NULL UNIQUE
+)";
+
+$conn->exec($sqlList);
 		?>
