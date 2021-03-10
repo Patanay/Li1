@@ -7,10 +7,12 @@ if($conn)
 	else{
 		echo "Connection Failed";
 		}
-$sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
+/* $sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
 id serial PRIMARY KEY,
 sampleField character varying(20) NOT NULL UNIQUE
-)";
-
+)"; */
+$sqlList = "INSERT INTO sampleTable (sampleField) VALUES ('HTML01'), ('JS01'), ('PHP01')";
 $conn->exec($sqlList);
+$cmdtuples = pg_affected_rows($sqlList);
+echo $cmdtuples . " tuples are affected.\n";
 		?>
