@@ -1,28 +1,13 @@
 <?php
-$conn=pg_connect("host=ec2-54-87-34-201.compute-1.amazonaws.com port=5432 dbname=dedlg7nokqgirj user=gkployqpqsndvv password=e6d2be1e0ad461a6a5cb012ce399dba704be2eb7f3f9ec0a55bbb93d5035784c");
-if($conn)
-{
-	echo"Successfull";
-	}
-	else{
-		echo "Connection Failed";
-		}
-/* $sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
-id serial PRIMARY KEY,
-sampleField character varying(20) NOT NULL UNIQUE
-)"; */
-/* $sqlList = "INSERT INTO sampleTable (sampleField) VALUES ('HTML01'), ('JS01'), ('PHP01')";
-$conn->exec($sqlList);
-$cmdtuples = pg_affected_rows($sqlList);
-echo $cmdtuples . " tuples are affected.\n";*/
-$result = pg_query($conn, "SELECT * FROM sampleTable");
-if (!$result) {
-    echo "An error occurred.\n";
-    exit;
-}
-
-$arr = pg_fetch_all($result);
-
-print_r($arr);
-echo "HEllo";
-		?>
+   $host        = "host = 127.0.0.1";
+   $port        = "port = 5432";
+   $dbname      = "dbname = testdb";
+   $credentials = "user = postgres password=pass123";
+$db = pg_connect("host=ec2-54-87-34-201.compute-1.amazonaws.com port=5432 dbname=dedlg7nokqgirj user=gkployqpqsndvv password=e6d2be1e0ad461a6a5cb012ce399dba704be2eb7f3f9ec0a55bbb93d5035784c");
+   //$db = pg_connect( "$host $port $dbname $credentials"  );
+   if(!$db) {
+      echo "Error : Unable to open database\n";
+   } else {
+      echo "Opened database successfully\n";
+   }
+?>
