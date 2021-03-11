@@ -11,9 +11,7 @@
       echo "Opened database successfully\n";
    }
 $sql =<<<EOF
-      CREATE TABLE movie5
-      (id SERIAL PRIMARY KEY NOT NULL,
-      name  VARCHAR(50)    NOT NULL);
+      DROP TABLE company;
 EOF;
    $ret = pg_query($db, $sql);
    if(!$ret) {
