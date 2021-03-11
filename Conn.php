@@ -21,5 +21,5 @@ EOF;
    
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hey5";
+echo"HO Gaya Hey15";
 ?>
