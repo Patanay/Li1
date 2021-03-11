@@ -17,13 +17,13 @@ $sql ="SELECT * from COMPANY";
       echo pg_last_error($db);
       exit;
    } 
-   while($row = pg_fetch_row($ret)) {
-      echo "ID = ". $row[0] . "<br/>";
-      echo "NAME = ". $row[1] ."<br/>";
-      echo "ADDRESS = ". $row[2] ."<br/>";
-      echo "SALARY =  ".$row[4] ."<br/><br/>";
+   while($row = pg_fetch_assoc($ret)) {
+      echo "ID = ". $row["ID"] . "<br/>";
+      echo "NAME = ". $row["NAME"] ."<br/>";
+      echo "ADDRESS = ". $row["ADDRESS"] ."<br/>";
+      echo "SALARY =  ".$row["SALARY"] ."<br/><br/>";
    }
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hey";
+echo"HO Gaya Hey2";
 ?>
