@@ -11,7 +11,7 @@
       echo "Opened database successfully\n";
    }
 $sql =<<<EOF
-      CREATE TABLE movie1
+      CREATE TABLE movie2
       (id SERIAL PRIMARY KEY NOT NULL,
       name  VARCHAR(50)    NOT NULL);
 EOF;
@@ -23,5 +23,5 @@ EOF;
    
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hey8";
+echo"HO Gaya Hey9";
 ?>
