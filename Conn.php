@@ -3,12 +3,29 @@
    $port        = "port = 5432";
    $dbname      = "dbname = testdb";
    $credentials = "user = postgres password=pass123";
-$db = pg_connect("host=ec2-54-87-34-201.compute-1.amazonaws.com port=5432 dbname=dedlg7nokqgirj user=gkployqpqsndvv password=e6d2be1e0ad461a6a5cb012ce399dba704be2eb7f3f9ec0a55bbb93d5035784c");
-   //$db = pg_connect( "$host $port $dbname $credentials"  );
+
+   $db = pg_connect("host=ec2-54-87-34-201.compute-1.amazonaws.com port=5432 dbname=dedlg7nokqgirj user=gkployqpqsndvv password=e6d2be1e0ad461a6a5cb012ce399dba704be2eb7f3f9ec0a55bbb93d5035784c");
    if(!$db) {
       echo "Error : Unable to open database\n";
    } else {
       echo "Opened database successfully\n";
    }
-echo"Helo";
+   
+   $sql =<<<EOF
+      CREATE TABLE COMPANY
+      (ID INT PRIMARY KEY     NOT NULL,
+      NAME           TEXT    NOT NULL,
+      AGE            INT     NOT NULL,
+      ADDRESS        CHAR(50),
+      SALARY         REAL);
+EOF;
+
+   $ret = pg_query($db, $sql);
+   if(!$ret) {
+      echo pg_last_error($db);
+   } else {
+      echo "Table created successfully\n";
+   }
+   pg_close($db);
+echo"HO Gaya";
 ?>
