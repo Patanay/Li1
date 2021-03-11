@@ -20,12 +20,12 @@ EOF;
       exit;
    } 
    while($row = pg_fetch_row($ret)) {
-      echo "ID = ". $row[0] . "\n";
-      echo "NAME = ". $row[1] ."\n";
-      echo "ADDRESS = ". $row[2] ."\n";
-      echo "SALARY =  ".$row[4] ."\n\n";
+      echo "ID = ". $row[0] . "<br/>";
+      echo "NAME = ". $row[1] ."<br/>";
+      echo "ADDRESS = ". $row[2] ."<br/>";
+      echo "SALARY =  ".$row[4] ."<br/><br/>";
    }
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Ho";
+echo"HO Gaya Hi";
 ?>
