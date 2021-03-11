@@ -10,6 +10,9 @@
    } else {
       echo "Opened database successfully\n";
    }
+$sql ="INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) VALUES (5, 'Paul', 32, 'California', 20000.00 ),(6, 'Allen', 25, 'Texas', 15000.00 ),(7, 'Teddy', 23, 'Norway', 20000.00 ),(8, 'Mark', 25, 'Rich-Mond ', 65000.00 )";
+
+   $ret = pg_query($db, $sql);
 $sql ="SELECT * from COMPANY";
 
    $ret = pg_query($db, $sql);
@@ -26,5 +29,5 @@ $sql ="SELECT * from COMPANY";
    }
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hey6";
+echo"HO Gaya Hey7";
 ?>
