@@ -10,9 +10,7 @@
    } else {
       echo "Opened database successfully\n";
    }
-$sql =<<<EOF
-      SELECT * from COMPANY;
-EOF;
+$sql ="SELECT * from COMPANY";
 
    $ret = pg_query($db, $sql);
    if(!$ret) {
@@ -27,5 +25,5 @@ EOF;
    }
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hi";
+echo"HO Gaya Hey";
 ?>
