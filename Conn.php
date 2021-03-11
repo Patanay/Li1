@@ -19,8 +19,12 @@ $sql ="SELECT * from COMPANY";
    } 
    while($row = pg_fetch_assoc($ret)) {
       echo $row['id'] . "<br/>";
+      echo $row['name'] . "<br/>";
+      echo $row['age'] . "<br/>";
+      echo $row['address'] . "<br/>";
+      echo $row['salary'] . "<br/>";
    }
    echo "Operation done successfully\n";
    pg_close($db);
-echo"HO Gaya Hey5";
+echo"HO Gaya Hey6";
 ?>
