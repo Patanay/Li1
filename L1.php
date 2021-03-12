@@ -1,5 +1,7 @@
 
-<?php include("Conn.php");
+<?php 
+echo "Hello";
+include("Conn.php");
 $query="SELECT *FROM movie2 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
