@@ -3,7 +3,7 @@
    if(!$conn) {
       echo "Error : Unable to open database\n"; 
    } else {
-      echo "Opened database successfully\n";
+      echo "Opened database successfully...<br>";
    }
 error_reporting(0);
 ?>
