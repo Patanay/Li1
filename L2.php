@@ -16,7 +16,7 @@
 <iframe src="https://pagalbanay.000webhostapp.com/R2.html" style="border:none;" height="200" width="300"></iframe>
 <hr width="50%px">
 <h1><font color="#0000ff"><u>Only 21 Movies</u></font></h1>
-<?php $sr=$_POST['sr'];?>
+<?php echo $sr=$_POST['sr'];?>
 <h2><font color="#0000ff"># Movie On Demand</font><a target="_top" href="https://t.me/livewebsite">CLICK HERE >></a></h2>
 <h3><font color="#00ff00">HOLLYWOOD SEARCH FOR </font><a target="_top" href="http://pagalbanay.orgfree.com/Search.php?sr=<?php echo $sr; ?>">CLICK HERE >></a></h3>
 <h3><font color="#ff0000">DOWNLOAD FOR CLICK PICTURE</font></h3>
