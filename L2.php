@@ -6,15 +6,6 @@
 <meta http-equiv="refresh" content="120">
 <title>Only 21 Movies</title></head>
 <body>
-<h1 align="center"><font face="serif">-: Comment Box:-</font></h1><h3 align="center">
-<form action="https://pagalbanay.000webhostapp.com/Go.php" method="POST">
-<font face="serif">Name</font> &nbsp;&nbsp;&nbsp; : <input type="text" maxlength="30" size="21" name="N" value="" required /><br><br>
-<font face="serif">Comment</font> &nbsp; : <input type="text" maxlength="50" size="25" name="C" value="" required /><br><br>
-<input type="hidden" name="url" value="<?php echo "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>"/>
-<input type="submit" value="SUBMIT"/>
-</form></h3><br>
-<iframe src="https://pagalbanay.000webhostapp.com/R2.html" style="border:none;" height="200" width="300"></iframe>
-<hr width="50%px">
 <h1><font color="#0000ff"><u>Only 21 Movies</u></font></h1>
 <?php $sr=$_GET['sr'];?>
 <h2><font color="#0000ff"># Movie On Demand </font><a target="_top" href="https://t.me/livewebsite">CLICK HERE >></a></h2>
