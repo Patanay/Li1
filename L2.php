@@ -46,7 +46,7 @@ include("Conn.php");
 $query="SELECT *FROM movie3 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
-{ $x1++;if($x1==11){break;}$Movie=$result['name'];
+{ $x1++;if($x1==21){break;}$Movie=$result['name'];
 echo "<a target=\"_top\" href=\"http://pagalbanaya.byethost3.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalbana.000webhostapp.com/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
@@ -56,7 +56,7 @@ include("Conn.php");
 $query="SELECT *FROM movie4 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
-{ $x1++;if($x1==11){break;}$Movie=$result['name'];
+{ $x1++;if($x1==21){break;}$Movie=$result['name'];
 echo "<a target=\"_top\" href=\"http://pagalbanaya.byethost3.com/Reindex2.php?Movie=$Movie&L=2&sr=$sr\"><img src=\"https://pagalbanaya.000webhostapp.com/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
