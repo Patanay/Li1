@@ -18,7 +18,7 @@ $query="SELECT *FROM movie1 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==31){break;}$Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalbana.000webhostapp.com/1/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A2/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?><!--
 <h2><font 
@@ -47,7 +47,7 @@ $query="SELECT *FROM movie3 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==21){break;}$Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalbana.000webhostapp.com/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A3/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
 <h1><font color="#808080"><u>BOLLYWOOD & SOUTH </u></font></h1>
