@@ -18,7 +18,7 @@ $query="SELECT *FROM movie1 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==31){break;}$Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A2/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A3/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?><!--
 <h2><font 
@@ -36,7 +36,7 @@ $query="SELECT *FROM movie2 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==31){break;} $Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=2&sr=$sr\"><img src=\"https://pagalbanaya.000webhostapp.com/1/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=2&sr=$sr\"><img src=\"https://pagalbann.000webhostapp.com/A3/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
 	<h1><font color="#0000ff"><u>POPULAR MOVIE ON WEEK</u></font></h1>
@@ -47,7 +47,7 @@ $query="SELECT *FROM movie3 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==21){break;}$Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A3/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=1&sr=$sr\"><img src=\"https://pagalban.000webhostapp.com/A2/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
 <h1><font color="#808080"><u>BOLLYWOOD & SOUTH </u></font></h1>
@@ -57,7 +57,7 @@ $query="SELECT *FROM movie4 ORDER BY id ASC ";
 $data=pg_query($conn,$query);
 while($result=pg_fetch_assoc($data))
 { $x1++;if($x1==21){break;}$Movie=$result['name'];
-echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=2&sr=$sr\"><img src=\"https://pagalbanaya.000webhostapp.com/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
+echo "<a target=\"_top\" href=\"http://pagalbanay.000webhostapp.com/Reindex2.php?Movie=$Movie&L=2&sr=$sr\"><img src=\"https://pagalbann.000webhostapp.com/A2/Moviesflix/$Movie.jpg\" width=\"140\" height=\"260\" alt=\"Download $Movie\"></img></a>&nbsp;";
 }
 ?>
 	<!--
@@ -67,5 +67,5 @@ color="#00ff00">MORE MOVIES & SEASONS :
 target="_top" href="Li1.php?More=2">CLICK HERE >>
 </a></h2> -->
 <h2><font color="#0000ff">JOIN TELEGRAM  GROUP @livewebsite</font></h2>
-<span style="font-family:serif;"><p align="center"> Copyright &copy; 2016-2021 Liwebsite.All rights reserved.</p></span>
+<span style="font-family:serif;"><p align="center"> Copyright &copy; 2016-2022 Liwebsite.All rights reserved.</p></span>
 </body></html>
